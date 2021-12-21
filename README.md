@@ -1,6 +1,8 @@
 animated-search-highlight.vim
 =============================
 
+![animated-search-highlight vim](https://user-images.githubusercontent.com/41148/146956117-14137c65-1648-4bb4-aebf-6aafb1dec1a1.gif)
+
 Description
 -----------
 
