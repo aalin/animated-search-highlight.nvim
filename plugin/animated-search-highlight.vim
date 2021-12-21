@@ -1,6 +1,6 @@
 " animated-search-highlight.vim: Animated search highlights
 
-if exists("g:loaded_animated_search_highlight")
+if exists('g:loaded_animated_search_highlight')
   finish
 endif
 let g:loaded_animated_search_highlight = 1
@@ -12,6 +12,7 @@ function! s:hslToRgb(h, s, l)
 
   let l:q = a:l < 0.5 ? a:l * (1 + a:s) : a:l + a:s - a:l * a:s
   let l:p = 2 * a:l - l:q
+
   let l:r = s:hueToRgb(l:p, l:q, a:h + 1/3.0)
   let l:g = s:hueToRgb(l:p, l:q, a:h)
   let l:b = s:hueToRgb(l:p, l:q, a:h - 1/3.0)
@@ -69,7 +70,7 @@ function! s:hexColor(rgb)
   let g = float2nr(floor(a:rgb[1] * 255))
   let b = float2nr(floor(a:rgb[2] * 255))
 
-  return printf("#%02x%02x%02x", r, g, b)
+  return printf('#%02x%02x%02x', r, g, b)
 endfunction
 
 function AnimateSearchHighlight(timer)
@@ -105,7 +106,7 @@ function AnimateSearchHighlight(timer)
     \ )
   \ )
 
-  let l:gui= l:x < 0.5 ? "NONE" : "bold"
+  let l:gui = l:x < 0.5 ? 'NONE' : 'bold'
 
   execute 'highlight IncSearch gui='l:gui' guifg='l:guifg' guibg='l:guibg
   execute 'highlight Search    gui='l:gui' guifg='l:guifg' guibg='l:guibg
