@@ -46,7 +46,7 @@ endfunction
 
 function! s:clamp(x, min, max)
   if a:x < a:min
-    return min
+    return a:min
   elseif a:x > a:max
     return a:max
   else
