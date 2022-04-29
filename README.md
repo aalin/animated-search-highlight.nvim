@@ -1,7 +1,7 @@
 animated-search-highlight.nvim
 ==============================
 
-![animated-search-highlight vim](https://user-images.githubusercontent.com/41148/146956117-14137c65-1648-4bb4-aebf-6aafb1dec1a1.gif)
+<img src="https://user-images.githubusercontent.com/41148/165985525-0a5a8c55-5857-4eda-8bfa-bb8360ce0beb.gif" width="442">
 
 Description
 -----------
